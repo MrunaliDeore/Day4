@@ -26,41 +26,7 @@ public class SnakeLadderUC6
 				rolldice = (int) (1 + Math.floor(Math.random() * 10) % 6); // roll the the dice to get number
 				visited = visited + rolldice;
 				count++;
-				if (visited < end) 
-				{
-
-					// Ladders starts from here
-					if (visited == 2)
-						visited = 23;
-					else if (visited == 6)
-						visited = 28;
-					else if (visited == 32)
-						visited = 51;
-					else if (visited == 41)
-						visited = 61;
-					else if (visited == 65)
-						visited = 87;
-					else if (visited == 89)
-						visited = 95;
-					else if (visited == 15)
-						visited = 4;
-					// snakes start from here
-					else if (visited == 21)
-						visited = 7;
-					else if (visited == 56)
-						visited = 13;
-					else if (visited == 49)
-						visited = 19;
-					else if (visited == 63)
-						visited = 44;
-					else if (visited == 85)
-						visited = 38;
-					else if (visited == 31)
-						visited = 12;
-					else if (visited == 99)
-						visited = 35;
-
-				} else if (visited > end) 
+				if (visited > end) 
 				{
 					visited = visited - rolldice;
 					System.out.println("  Skip Step");
